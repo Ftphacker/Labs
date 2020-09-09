@@ -37,7 +37,7 @@ void matrix::sorting(){
 		max = m[i][0];
 		min = m[i][0];
 		for (int j = 0; j < y; j++){
-			if (max < m[i][j]){
+			if (((max < m[i][j]) && (m[i][j] != 0)) || max == 0){
 				max = m[i][j];
 				k = 0;
 				mx[k] = j;
@@ -46,7 +46,7 @@ void matrix::sorting(){
 				mx[k] = j;
 				k++;
 			}
-			if (min > m[i][j]){
+			if (((min > m[i][j]) && (m[i][j] != 0)) || min == 0){
 				min = m[i][j];
 				t = 0;
 				mn[t] = j;
