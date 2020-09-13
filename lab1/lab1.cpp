@@ -2,14 +2,20 @@
 #include "lab1.h"
 
 void matrix::matrix_start(){
-	give_coord();
+	if (!give_coord()){
+		std::cout << "Incorrect input size matrix \n";
+	}
 }
 
-void matrix::give_coord(){
+int matrix::give_coord(){
 	std::cin >> x >> y;
+	if (std::cin.good()){
+		return 1;
+	}
+	return 0;
 }
 
-void matrix::create_matrix(){
+int matrix::create_matrix(){
 	m = new int* [x]; 
 	m2 = new int* [x];
 	int data;
@@ -20,10 +26,15 @@ void matrix::create_matrix(){
     for (int i = 0; i < x; i++){
       	for (int j = 0; j < y; j++){
       		std::cin >> data;
-      		m[i][j] = data;
-      		m2[i][j] = data;
+      		if (std::cin.good()){
+      			m[i][j] = data;
+      			m2[i][j] = data;
+      		} else {
+      			return 0;
+      		}
       	}
     }
+    return 1;
 }
 
 void matrix::sorting(){

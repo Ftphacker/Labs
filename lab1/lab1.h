@@ -9,9 +9,9 @@ class matrix{
 	public:
 		void matrix_start();
 
-		void give_coord();
+		int give_coord();
 
-		void create_matrix();
+		int create_matrix();
 
 		void sorting();
 
