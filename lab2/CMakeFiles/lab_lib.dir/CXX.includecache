@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/volod/Desktop/cpp/lab2/file2.cpp
+iostream
+-
+lab2.h
+/home/volod/Desktop/cpp/lab2/lab2.h
+stdexcept
+-
+exception
+-
+
+/home/volod/Desktop/cpp/lab2/lab2.cpp
+iostream
+-
+lab2.h
+/home/volod/Desktop/cpp/lab2/lab2.h
+cmath
+-
+stdexcept
+-
+exception
+-
+
+/home/volod/Desktop/cpp/lab2/lab2.h
+iostream
+-
+

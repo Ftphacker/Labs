@@ -1,0 +1,20 @@
+cmake_minimum_required(VERSION 2.8.8)
+
+project(two)
+
+add_library(lab_lib lab2.h lab2.cpp file2.cpp)
+
+add_executable(main main.cpp)
+
+target_link_libraries(main lab_lib)
+
+add_subdirectory(googletest)
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -fprofile-arcs -ftest-coverage")
+
+include_directories(googletest/include)
+
+add_executable(test test.cpp)
+
+target_link_libraries(test gtest gtest_main lab_lib)
+
