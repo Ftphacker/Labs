@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/volod/Desktop/cpp/lab3/cards.cpp
+iostream
+-
+lab3.h
+/home/volod/Desktop/cpp/lab3/lab3.h
+ctime
+-
+
+/home/volod/Desktop/cpp/lab3/lab3.h
+iostream
+-
+

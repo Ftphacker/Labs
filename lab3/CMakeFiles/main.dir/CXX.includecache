@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/volod/Desktop/cpp/lab3/lab3.h
+iostream
+-
+
+/home/volod/Desktop/cpp/lab3/main.cpp
+iostream
+-
+lab3.h
+/home/volod/Desktop/cpp/lab3/lab3.h
+
