@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblab_lib.a CMakeFiles/lab_lib.dir/home/volod/Desktop/cpp/lab3/lab3_dinamic/cards.cpp.o CMakeFiles/lab_lib.dir/home/volod/Desktop/cpp/lab3/lab3_dinamic/function.cpp.o
+/usr/bin/ranlib liblab_lib.a

@@ -1,0 +1,4 @@
+/home/volod/Desktop/cpp/lab3/lab3_dinamic/bild/CMakeFiles/rebuild_cache.dir
+/home/volod/Desktop/cpp/lab3/lab3_dinamic/bild/CMakeFiles/lab_lib.dir
+/home/volod/Desktop/cpp/lab3/lab3_dinamic/bild/CMakeFiles/edit_cache.dir
+/home/volod/Desktop/cpp/lab3/lab3_dinamic/bild/CMakeFiles/main.dir

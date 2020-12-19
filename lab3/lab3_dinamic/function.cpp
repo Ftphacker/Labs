@@ -61,7 +61,7 @@ card completion_rand(int n, card *my_deck){
 }
 
 int create_card(card *my_deck, int N){
-	my_deck[N] = completion_rand(N, my_deck);
+	//my_deck[N].rang = completion_rand(N, my_deck)->rang;
 	N++;
 	return N;
 }
@@ -87,7 +87,7 @@ int dialog(){
 int dialog(int g){
 	int i;
 	std::cout << "input command : \n"; // 1,2,3,4,5
-	std::cout << "0.exit\n1.add rand card\n2.receive suid of card\n3.receive rang of card\n4.sort cards\n5.select a subgroup\n6.print all deck\n7.input new card\n8.create new deck\n9.copy deck\n"; //select a subgroup of cards of the specified suit from a group of cards.
+	std::cout << "0.exit\n1.add rand card\n2.receive suid of card\n3.receive rang of card\n4.sort cards\n5.select a subgroup\n6.print all deck\n7.input new card\n8.create new deck\n"; //select a subgroup of cards of the specified suit from a group of cards.
 	try{
 		std::cin >> i;
 	}catch(std::invalid_argument &err){
@@ -226,7 +226,7 @@ void prog1(){
 }
 
 void prog2(){
-	deck deck1(40);
+	deck deck1;
 	int i = 1;
 	while (i != 0){
 		i = dialog(0);
@@ -235,4 +235,5 @@ void prog2(){
 		else
 			deck1 = executor(deck1, i, 0);
 	}
+	deck1.isc_dist();
 }

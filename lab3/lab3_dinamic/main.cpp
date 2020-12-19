@@ -10,7 +10,7 @@ int main(){
 		std::cout << "invalid_argument err"<< std::endl;
 		return 0;
 	}
-	if(version != 1){
+	if(version != 1 && version != 2){
 		std::cout << "invalid_argument err"<< std::endl;
 	}
 	switch (version) {
