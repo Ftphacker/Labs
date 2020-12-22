@@ -139,7 +139,7 @@ int receive_rang(deck my_deck){
 	return 0;
 }
 
-deck sort(deck my_deck){
+deck sort(deck &my_deck){
 	my_deck = my_deck.sort_deck();
 	return my_deck;
 }
@@ -198,7 +198,7 @@ deck create_deck(deck my_deck){
 	return my_deck2;
 }
 
-deck executor(deck my_deck, int i, int pobg){
+deck executor(deck &my_deck, int i, int pobg){
 	switch(i){
 		case 1 : {my_deck = add_card(my_deck); break;}
 		case 2 : {receive_suid(my_deck); break;}
@@ -228,6 +228,7 @@ void prog1(){
 void prog2(){
 	deck deck1;
 	int i = 1;
+	//deck1 = deck1.sort_deck();
 	while (i != 0){
 		i = dialog(0);
 		if(i < 0 || i > 9) 
