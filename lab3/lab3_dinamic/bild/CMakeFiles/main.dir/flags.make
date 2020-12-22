@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/volod/Desktop/cpp/lab3/lab3_dinamic/bild/googletest/include
 
-CXX_FLAGS = 
+CXX_FLAGS =  -Wall -fprofile-arcs -ftest-coverage
 

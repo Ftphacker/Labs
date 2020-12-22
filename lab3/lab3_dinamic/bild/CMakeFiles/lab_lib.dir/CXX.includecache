@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+/home/volod/Desktop/cpp/lab3/lab3_dinamic/cards.cpp
+iostream
+-
+lab3_din.h
+/home/volod/Desktop/cpp/lab3/lab3_dinamic/lab3_din.h
+ctime
+-
+
 /home/volod/Desktop/cpp/lab3/lab3_dinamic/function.cpp
 iostream
 -

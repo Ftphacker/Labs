@@ -12,19 +12,17 @@ class deck{
 	public:
 		deck();
 		deck(int);
-		deck(const deck&, int);
-		//~deck();
+		deck(const deck&);
+		~deck();
 		deck& operator ++ ();                             
 		char& operator () (const int&);
 		int& operator [] (const int&);
-		deck& operator = (const deck&);
+		deck operator = (const deck&);
 		friend std::ostream& operator<<(std::ostream &out, const deck &);
 		friend std::istream& operator>>(std::istream &in, deck &);
 		deck& sort_deck();
 		card* give_suit(char);
 		int get_N();
-		//~deck();
-		void isc_dist();
 };
 
 int dialog();

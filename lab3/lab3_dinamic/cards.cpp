@@ -6,9 +6,9 @@ int deck::get_N(){
 	return N;
 }
 
-void deck::isc_dist(){
+/*void deck::isc_dist(){
 	delete [] my_deck;
-}
+}*/
 
 deck::deck(){
 	N = 52;
@@ -28,21 +28,23 @@ deck::deck(int n){
 	}
 }
 
-deck::deck(const deck &deck1, int i){
+deck::deck(const deck &deck1){
+	int i = deck1.N;
 	my_deck = new card[i];
 	N = i;
 	for(int k = 0; k < N; ++k){
-		my_deck[k] = deck1.my_deck[k];
+		my_deck[k].suit = deck1.my_deck[k].suit;
+		my_deck[k].rang = deck1.my_deck[k].rang;
 	}
 }
 
-/*deck::~deck(){
+deck::~deck(){
 	delete [] my_deck;
-}*/
+}
 
-deck& deck::operator = (const deck& deck1){
+deck deck::operator = (const deck& deck1){
 	deck deck2(deck1);
-	return *this;
+	return deck2;
 }
 
 deck& deck::operator ++ (){
@@ -88,6 +90,7 @@ std::istream& operator >> (std::istream& in, deck& d){
 		d.my_deck[d.N].rang = 0;
 		d.my_deck[d.N].suit = 'n';
 	}
+	return in;
 }
 
 deck& deck::sort_deck(){

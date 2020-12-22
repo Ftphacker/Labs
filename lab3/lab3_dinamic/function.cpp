@@ -235,5 +235,5 @@ void prog2(){
 		else
 			deck1 = executor(deck1, i, 0);
 	}
-	deck1.isc_dist();
+	//deck1.isc_dist();
 }

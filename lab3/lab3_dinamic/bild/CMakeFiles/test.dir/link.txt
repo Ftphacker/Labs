@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -fprofile-arcs -ftest-coverage -rdynamic CMakeFiles/test.dir/home/volod/Desktop/cpp/lab3/lab3_dinamic/test.cpp.o -o test  lib/libgtest.a lib/libgtest_main.a liblab_lib.a lib/libgtest.a -lpthread 

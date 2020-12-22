@@ -1,1 +1,1 @@
-/usr/bin/c++ -rdynamic CMakeFiles/main.dir/home/volod/Desktop/cpp/lab3/lab3_dinamic/main.cpp.o -o main  liblab_lib.a 
+/usr/bin/c++  -Wall -fprofile-arcs -ftest-coverage -rdynamic CMakeFiles/main.dir/home/volod/Desktop/cpp/lab3/lab3_dinamic/main.cpp.o -o main  liblab_lib.a 
