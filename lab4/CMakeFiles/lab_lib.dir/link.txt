@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblab_lib.a CMakeFiles/lab_lib.dir/Agency.cpp.o CMakeFiles/lab_lib.dir/Descriptor.cpp.o CMakeFiles/lab_lib.dir/Radio.cpp.o CMakeFiles/lab_lib.dir/Print.cpp.o CMakeFiles/lab_lib.dir/Tele.cpp.o
+/usr/bin/ranlib liblab_lib.a

@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/volod/Desktop/cpp/lab4/Agency.h
+iostream
+-
+string
+-
+Descriptor.h
+/home/volod/Desktop/cpp/lab4/Descriptor.h
+
+/home/volod/Desktop/cpp/lab4/Descriptor.h
+iostream
+-
+string
+-
+
+/home/volod/Desktop/cpp/lab4/Function.cpp
+Radio.h
+/home/volod/Desktop/cpp/lab4/Radio.h
+
+/home/volod/Desktop/cpp/lab4/Print.h
+Tele.h
+/home/volod/Desktop/cpp/lab4/Tele.h
+
+/home/volod/Desktop/cpp/lab4/Radio.h
+Print.h
+/home/volod/Desktop/cpp/lab4/Print.h
+
+/home/volod/Desktop/cpp/lab4/Tele.h
+Agency.h
+/home/volod/Desktop/cpp/lab4/Agency.h
+

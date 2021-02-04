@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -fprofile-arcs -ftest-coverage -rdynamic CMakeFiles/main.dir/Function.cpp.o -o main  liblab_lib.a 

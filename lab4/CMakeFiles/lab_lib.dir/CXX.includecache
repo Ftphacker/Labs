@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/volod/Desktop/cpp/lab4/Agency.cpp
+Agency.h
+/home/volod/Desktop/cpp/lab4/Agency.h
+
+/home/volod/Desktop/cpp/lab4/Agency.h
+iostream
+-
+string
+-
+Descriptor.h
+/home/volod/Desktop/cpp/lab4/Descriptor.h
+
+/home/volod/Desktop/cpp/lab4/Descriptor.h
+iostream
+-
+string
+-
+
